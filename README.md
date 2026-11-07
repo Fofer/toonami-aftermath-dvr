@@ -73,6 +73,10 @@ gh repo create toonami-aftermath-dvr --public --source=. --push
 The workflow in `.github/workflows/docker.yml` runs the tests and pushes the image to GHCR on every push to `main`.
 After the first run, set the package visibility to public under the repo's Packages settings if you want unauthenticated pulls.
 
+## License
+
+[MIT](LICENSE). This covers the code in this repository only, not Toonami Aftermath's streams or schedule data.
+
 ## Notes
 
 - Stream URLs point straight at the Toonami Aftermath servers; this container does not proxy video.
