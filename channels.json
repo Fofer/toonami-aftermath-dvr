@@ -1,0 +1,38 @@
+[
+  {
+    "id": "toonami-aftermath-east",
+    "name": "Toonami Aftermath East",
+    "api_names": ["Toonami Aftermath East"],
+    "stream": "http://api.toonamiaftermath.com:3000/est/playlist.m3u8",
+    "group": "Toonami Aftermath",
+    "number": 1,
+    "logo": ""
+  },
+  {
+    "id": "toonami-aftermath-west",
+    "name": "Toonami Aftermath West",
+    "api_names": ["Toonami Aftermath West"],
+    "stream": "http://api.toonamiaftermath.com:3000/pst/playlist.m3u8",
+    "group": "Toonami Aftermath",
+    "number": 2,
+    "logo": ""
+  },
+  {
+    "id": "toonami-aftermath-movies",
+    "name": "Toonami Aftermath Movies",
+    "api_names": ["Movies", "Toonami Aftermath Movies"],
+    "stream": "http://api.toonamiaftermath.com:3000/movies/playlist.m3u8",
+    "group": "Toonami Aftermath",
+    "number": 3,
+    "logo": ""
+  },
+  {
+    "id": "toonami-aftermath-radio",
+    "name": "Toonami Aftermath Radio",
+    "api_names": [],
+    "stream": "http://api.toonamiaftermath.com:3000/radio/playlist.m3u8",
+    "group": "Toonami Aftermath",
+    "number": 4,
+    "logo": ""
+  }
+]

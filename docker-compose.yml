@@ -1,0 +1,21 @@
+services:
+  toonami-epg:
+    build: .
+    # Or use the prebuilt image once your GitHub Action has published it:
+    # image: ghcr.io/Fofer/toonami-aftermath-dvr:latest
+    container_name: toonami-epg
+    restart: unless-stopped
+    ports:
+      - "8787:8787"
+    environment:
+      TZ: America/Los_Angeles            # log timestamps only; the guide itself is UTC
+      TA_REFRESH_MINUTES: "60"           # how often the guide is rebuilt
+      TA_HORIZON_HOURS: "24"             # how far ahead the guide reaches
+      TA_SAMPLE_MINUTES: "120"           # API probe spacing (each response covers only ~10 shows)
+      # TA_PUBLIC_URL: "http://192.168.1.50:8787"   # optional: force the URL written into the M3U
+    volumes:
+      - toonami-data:/data
+      # - ./channels.json:/app/channels.json:ro     # uncomment to edit the channel list without rebuilding
+
+volumes:
+  toonami-data:
